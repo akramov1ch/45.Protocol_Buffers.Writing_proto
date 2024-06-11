@@ -16,7 +16,6 @@ func (s *JSONRPCServer) HandleRequest(word string, result *string) error {
 		return fmt.Errorf("Error creating word: %v", err)
 	}
 
-	// For demonstration, just echoing back the word
 	*result = "Received and stored the word: " + word
 	return nil
 }
